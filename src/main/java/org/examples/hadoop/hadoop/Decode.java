@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 /**
  * @author nirmoho-Mac
- *
+ *Decode methode to convert encoded URL to UTF-8
  */
 public class Decode {
     

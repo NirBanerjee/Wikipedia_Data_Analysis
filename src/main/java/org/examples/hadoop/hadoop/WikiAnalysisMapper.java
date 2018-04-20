@@ -13,8 +13,15 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-
+/**
+ * Mapper Class
+ * @author nirmoho-Mac
+ *
+ */
 public class WikiAnalysisMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
+    /**
+     * Static List containing all domains which are to be blacklisted.
+     */
     private static final List<String> blackList = new ArrayList<String>(Arrays.asList("draft_talk:", "draft:", "gadget_talk:", "gadget:", "gadget_definition_talk:",
             "gadget_definition:", "talk:", "user_talk:", "user:", "wikipedia_talk:",
             "wikipedia:", "file_talk:", "file:", "mediawiki_talk:", "mediawiki:",
@@ -23,7 +30,13 @@ public class WikiAnalysisMapper extends Mapper<LongWritable, Text, Text, IntWrit
             "help_talk:", "help:", "category_talk:", "category:", "module_talk:", "special:",
             "module:", "media:"));
     
+    /**
+     * Intwritable object to write to context.
+     */
     private final static IntWritable one = new IntWritable(1);
+    /**
+     * Text object to write to context.
+     */
     private Text word = new Text();
     
     @Override

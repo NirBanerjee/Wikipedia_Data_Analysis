@@ -17,7 +17,8 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class WikiAnalysisDriver {
 
     /**
-     * @param args
+     * @param args -Command line argument to accept main class, input file and 
+     * output file.
      */
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
