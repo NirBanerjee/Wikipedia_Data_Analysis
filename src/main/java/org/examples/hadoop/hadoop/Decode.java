@@ -1,6 +1,3 @@
-/**
- * 
- */
 package org.examples.hadoop.hadoop;
 
 import java.nio.charset.StandardCharsets;

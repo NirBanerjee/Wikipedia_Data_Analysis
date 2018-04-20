@@ -1,7 +1,3 @@
-/**
- * @author nirmoho-Mac
- *
- */
 package org.examples.hadoop.hadoop;
 
 import java.io.IOException;
