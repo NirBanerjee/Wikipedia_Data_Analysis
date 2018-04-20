@@ -1,0 +1,5 @@
+org/examples/hadoop/hadoop/WikiAnalysisReducer.class
+org/examples/hadoop/hadoop/WikiAnalysisDriver.class
+org/examples/hadoop/hadoop/WikiAnalysisMapper.class
+org/examples/hadoop/hadoop/Decode.class
+org/examples/hadoop/hadoop/App.class
